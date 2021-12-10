@@ -1,7 +1,5 @@
 import numpy as np
-import napari
 
-# read data
 with open('./data/aoc_5_data.txt') as file:
     lines = file.readlines()
 
@@ -34,6 +32,7 @@ def make_line(nodes):
         edge[edge.index(short)] = [short[0] for i in max(edge, key=len)]
     return list(zip(*edge))
 
+
 line_arr = np.zeros((1000,1000))
 
 for le in line_ends:
@@ -42,4 +41,3 @@ for le in line_ends:
             line_arr[coord] += 1
 
 print(len(line_arr[line_arr > 1]))
-

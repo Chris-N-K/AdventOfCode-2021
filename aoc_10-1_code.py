@@ -24,4 +24,3 @@ for i, line in enumerate(lines):
                 break
 
 print(np.sum(e_points * illegal))
-

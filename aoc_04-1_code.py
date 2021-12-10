@@ -30,7 +30,6 @@ for num in num_stream:
             winning_num = num
             winning_card = np.copy(card)
 
-
 all_unmarked = winning_card[winning_card != -0.1]
 sum_unmarked = np.sum(all_unmarked)
 res = sum_unmarked * winning_num

@@ -29,9 +29,5 @@ print(fuel_consumption_rates)
 min_fuel = min(fuel_consumption_rates.values())
 print(list(fuel_consumption_rates.keys())[list(fuel_consumption_rates.values()).index(min_fuel)], min_fuel)
 
-# die Suche wird unnötig, wenn der mean verwendet wird und statt korrekt zu runden gefloored wird
+# alternative way to find the optimal position?
 print(int(np.mean(data)))
-# allerdings ist der mean nicht wirklich die richtige antwort, sondern nur nah dran. Daher ist mein Ansatz doch nicht so falsch xD
-# korrekte lösung:
-
-

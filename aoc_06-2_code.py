@@ -7,7 +7,7 @@ fish = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 for i in start:
     fish[i] += 1
 
-# day sim old
+# first idea
 for i in range(days):
     adults = list(fish[:7])
     children = list(fish[7:])
@@ -22,7 +22,7 @@ for i in range(days):
 print(fish)
 print(np.sum(fish))
 
-# day sim new
+# optimised
 fish = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 for i in start:
     fish[i] += 1

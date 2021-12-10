@@ -1,5 +1,3 @@
-import numpy as np
-
 with open('./data/aoc_10_data.txt') as file:
     lines = [list(line.replace('\n', '')) for line in file.readlines()]
 

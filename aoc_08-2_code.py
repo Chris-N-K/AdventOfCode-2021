@@ -54,6 +54,7 @@ def make_ref_dict(stream):
                 raise Exception()
     return ref_d
 
+
 def decode(ref_d, stream):
     clear_text = []
     for code in stream:
@@ -62,11 +63,11 @@ def decode(ref_d, stream):
                 clear_text.append((key, value, code))
     return clear_text
 
+
 res = 0
 for (input_sig, output_sig) in data:
-    refference = make_ref_dict(input_sig)
-    decoded = decode(refference, output_sig)
+    reference = make_ref_dict(input_sig)
+    decoded = decode(reference, output_sig)
     print(decoded)
     res += int(''.join([str(i[0]) for i in decoded]))
 print(res)
-
